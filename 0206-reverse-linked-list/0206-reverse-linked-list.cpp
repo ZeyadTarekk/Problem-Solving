@@ -19,6 +19,7 @@ public:
            cur->next = prev;
            prev = cur;
            cur = dum;
+           
        }
        return prev;
     
