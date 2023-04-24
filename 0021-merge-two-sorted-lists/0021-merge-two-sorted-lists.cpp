@@ -15,6 +15,7 @@ public:
         ListNode *t = &ans;
 
         while(list1 && list2){
+            
             if(list1->val <= list2->val){
                 // cout<<"Entered first if\n";
                 t->next = new ListNode(list1->val);
