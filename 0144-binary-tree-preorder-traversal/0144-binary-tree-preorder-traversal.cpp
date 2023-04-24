@@ -15,6 +15,8 @@ public:
     void order(TreeNode* root, vector<int>&ans){
         if(!root)
             return;
+        
+        
         ans.push_back(root->val);
         order(root->left,ans);
         order(root->right,ans);
