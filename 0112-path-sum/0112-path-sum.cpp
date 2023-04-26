@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    void sum(TreeNode* root, int targetSum, int& cur,bool &status){
+    void sum(TreeNode* root, int targetSum, int cur,bool &status){
         if(!root){
             status = false;
             return;
@@ -25,11 +25,11 @@ public:
         if(root->left){
             
             sum(root->left,targetSum,cur,status);
-            cur -= root->left->val;
+            // cur -= root->left->val;
         }
         if(root->right){
             sum(root->right,targetSum,cur,status);    
-            cur -= root->right->val;
+            // cur -= root->right->val;
         }
         
     }
