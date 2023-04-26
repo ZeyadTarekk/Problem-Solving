@@ -16,7 +16,7 @@ public:
             status = false;
             return;
         }
-        cout<<targetSum<<" "<<root->val<<" "<<cur<<endl;
+        // cout<<targetSum<<" "<<root->val<<" "<<cur<<endl;
         cur+=root->val;
         if(!root->left&& !root->right && cur==targetSum){
             status = true;
