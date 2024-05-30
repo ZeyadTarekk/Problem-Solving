@@ -11,8 +11,10 @@ public:
             if(prices[i] < minValue)
                 minValue = prices[i];
 
-            else if(prices[i]- minValue > currentProfit)
-            currentProfit = prices[i]- minValue ;
+            else if(prices[i]- minValue > currentProfit){
+                currentProfit = prices[i]- minValue ;
+            }
+            
         }
         
 
